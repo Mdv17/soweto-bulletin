@@ -1,0 +1,43 @@
+name: Design feedback
+description: Tell us what works and what doesn't in the prototype
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: screen
+    attributes:
+      label: Which screen?
+      options:
+        - Home
+        - News
+        - Notices
+        - Street alerts
+        - Deals
+        - Directory
+        - Shop dashboard
+        - Submit a story
+        - Account
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: worked
+    attributes:
+      label: What worked well?
+  - type: textarea
+    id: confusing
+    attributes:
+      label: What was confusing, missing or hard to use?
+    validations:
+      required: true
+  - type: dropdown
+    id: who
+    attributes:
+      label: Which best describes you?
+      options:
+        - Resident
+        - Shop owner
+        - Journalist or editor
+        - Public body or municipality
+        - Designer or developer
+        - Funder or assessor
